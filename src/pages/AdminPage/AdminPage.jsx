@@ -2,7 +2,7 @@ import { Authenticator } from "@aws-amplify/ui-react";
 
 export default function AdminPage() {
   return (
-    <Authenticator>
+    <Authenticator hideSignUp={true}>
       {({ signOut }) => (
         <div>
           <h1>Hello, welcome to my Website</h1>
