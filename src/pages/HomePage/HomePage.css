@@ -1,0 +1,95 @@
+.homepage-container {
+  min-height: 80vh;
+}
+
+.homepage-head {
+  display: flex;
+  flex-direction: row;
+  min-height: 20rem;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+}
+
+.homepage-head h2 {
+  font-family: "DDN";
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.homepage-head img {
+  height: 20rem;
+}
+
+.homepage-head-mobile {
+  display: flex;
+  flex-direction: row;
+  min-height: 20rem;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+  font-family: "DDN";
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+}
+
+.homepage-head-mobile img {
+  height: 8rem;
+}
+
+.homepage-head-mobile h2 {
+  font-size: 2.5rem;
+}
+
+.homepage-about {
+  display: flex;
+  flex-direction: row;
+  min-height: 20rem;
+  align-items: center;
+}
+
+.homepage-about img {
+  height: 30rem;
+}
+
+.homepage-about h4 {
+  padding: 3rem;
+}
+
+.homepage-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40rem;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+}
+
+.homepage-testimonials-mobile {
+  display: flex;
+  flex-direction: column;
+  min-height: 35rem;
+  justify-content: center;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+}
+
+.homepage-testimonials-mobile h2 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.carousel-text {
+  font-size: 1rem;
+}
+
+.homepage-contact {
+  display: flex;
+  flex-direction: row;
+  min-height: 20rem;
+  align-items: center;
+}
+
+.homepage-contact-mobile {
+  min-height: 20rem;
+}
