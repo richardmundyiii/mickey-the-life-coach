@@ -1,0 +1,9 @@
+.about-mobile {
+  display: flex;
+  flex-direction: column;
+  min-height: 50rem;
+}
+
+.profile-image {
+  height: 19rem;
+}
