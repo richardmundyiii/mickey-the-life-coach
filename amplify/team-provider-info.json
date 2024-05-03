@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mickeythelifecoach-dev-299e3-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654318784:role/amplify-mickeythelifecoach-dev-299e3-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654318784:role/amplify-mickeythelifecoach-dev-299e3-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mickeythelifecoach-dev-299e3-deployment",
+      "UnauthRoleName": "amplify-mickeythelifecoach-dev-299e3-unauthRole",
+      "StackName": "amplify-mickeythelifecoach-dev-299e3",
+      "StackId": "arn:aws:cloudformation:us-east-1:654654318784:stack/amplify-mickeythelifecoach-dev-299e3/29eaa9c0-08f1-11ef-8916-0e68b86cc0e5",
+      "AmplifyAppId": "d167g1qk4gc6sy"
+    },
+    "categories": {
+      "auth": {
+        "mickeythelifecoach4302bf40": {}
+      }
+    }
+  }
+}
