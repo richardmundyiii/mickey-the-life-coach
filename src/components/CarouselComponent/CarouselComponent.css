@@ -1,0 +1,7 @@
+.carousel-container {
+  padding: 5rem 3rem 5rem 3rem;
+}
+
+.carousel-container .card {
+  height: auto;
+}

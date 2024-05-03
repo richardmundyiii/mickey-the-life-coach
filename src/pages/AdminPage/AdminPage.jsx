@@ -21,7 +21,7 @@ export default function AdminPage() {
               </button>
             </nav>
             <div class="dash-navbar-left nb-visible">
-              <p class="nb-nav-title">Home</p>
+              <p class="nb-nav-title">Admin</p>
               <ul class="nb-nav">
                 <li>
                   <a

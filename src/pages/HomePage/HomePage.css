@@ -58,12 +58,27 @@
   padding: 3rem;
 }
 
+.homepage-venn {
+  display: flex;
+  flex-direction: row;
+  min-height: 40rem;
+  align-items: center;
+  padding: 3rem 5rem 3rem 5rem;
+  color: white;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+}
+
+.homepage-venn-mobile {
+  color: white;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+}
+
 .homepage-testimonials {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 40rem;
-  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+  align-items: center;
+  height: 30rem;
 }
 
 .homepage-testimonials-mobile {
@@ -71,12 +86,6 @@
   flex-direction: column;
   min-height: 35rem;
   justify-content: center;
-  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
-}
-
-.homepage-testimonials-mobile h2 {
-  color: white;
-  padding-bottom: 1rem;
 }
 
 .carousel-text {
@@ -88,8 +97,12 @@
   flex-direction: row;
   min-height: 20rem;
   align-items: center;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+  color: white;
 }
 
 .homepage-contact-mobile {
   min-height: 20rem;
+  background: linear-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
+  color: white;
 }
