@@ -3,6 +3,7 @@ import { Container, Row, Col, Carousel, Card } from "react-bootstrap";
 import CarouselComponent from "../../components/CarouselComponent/CarouselComponent";
 import TreeLogo from "../../images/tree.png";
 import AboutPhoto from "../../images/AboutPhoto.png";
+import BeachPhoto from "../../images/beach.jpg";
 import VennDiagrams from "../../images/venn.png";
 import "./HomePage.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -68,7 +69,7 @@ export default function HomePage() {
             </h4>
           </Col>
           <Col>
-            <img src={AboutPhoto} alt="..." />
+            <img src={BeachPhoto} alt="..." style={{ borderRadius: "50%" }} />
           </Col>
           <Col>
             <h4>
@@ -100,7 +101,11 @@ export default function HomePage() {
             better shape & feel healthier. You feel more purpose & meaning. And
             I'm there for you every step of the way.
           </h6>
-          <img src={AboutPhoto} alt="..." style={{ width: "100%" }} />
+          <img
+            src={BeachPhoto}
+            alt="..."
+            style={{ width: "100%", borderRadius: "50%", paddingTop: "2rem" }}
+          />
         </Col>
       </Row>
       <Row className="d-none d-md-block mt-5">

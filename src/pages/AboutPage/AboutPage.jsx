@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ProfileImage from "../../images/AboutPhoto.jpg";
+import ProfileImage from "../../images/cherryblossom.jpg";
 import "./AboutPage.css";
 
 export default function AboutPage() {
@@ -18,7 +18,8 @@ export default function AboutPage() {
           <img
             src={ProfileImage}
             alt="..."
-            style={{ float: "right", height: "40rem" }}
+            style={{ float: "right", height: "30rem", borderRadius: "2rem" }}
+            className="p-4"
           />
           <p style={{ textAlign: "justify", fontSize: "1.5rem" }}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
@@ -57,8 +58,16 @@ export default function AboutPage() {
           <h1>About Mickey</h1>
           <hr />
         </Col>
-        <Col>
-          <img src={ProfileImage} alt="..." className="profile-image" />
+        <Col className="pb-4">
+          <img
+            src={ProfileImage}
+            alt="..."
+            className="profile-image"
+            style={{
+              width: "100%",
+              borderRadius: "2rem",
+            }}
+          />
         </Col>
         <Col>
           <p style={{ textAlign: "justify", fontSize: "1rem" }}>
