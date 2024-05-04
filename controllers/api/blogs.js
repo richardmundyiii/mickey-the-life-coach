@@ -1,4 +1,4 @@
-const Blog = require("../../models/api/blog");
+const Blogs = require("../../models/api/blog");
 
 module.exports = {
   index,
@@ -9,17 +9,17 @@ module.exports = {
 
 async function index(req, res) {
   try {
-    const blogs = await Blog.find({});
+    const blogs = await Blogs.find({});
+    console.log(blogs, "working from controller");
     res.json(blogs);
   } catch (error) {
-    console.log(error);
     res.status(400).json(error);
   }
 }
 
 async function create(req, res) {
   try {
-    const blogPost = await Blog.create(req.body);
+    const blogPost = await Blogs.create(req.body);
     res.json(blogPost);
   } catch (error) {
     console.log(error);
@@ -29,7 +29,7 @@ async function create(req, res) {
 
 async function updatePost() {
   try {
-    const updatePost = await Blog.findOneAndUpdate(req.params.id, req.body, {
+    const updatePost = await Blogs.findOneAndUpdate(req.params.id, req.body, {
       new: true,
     });
     res.json(updatePost);
@@ -41,7 +41,7 @@ async function updatePost() {
 
 async function deletePost() {
   try {
-    const blogPost = await Blog.findOneAndDelete({ _id: req.params.id });
+    const blogPost = await Blogs.findOneAndDelete({ _id: req.params.id });
     res.json(blogPost);
   } catch (error) {
     console.log(error);

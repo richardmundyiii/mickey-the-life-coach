@@ -8,9 +8,9 @@ export default function Footer() {
         <Row className="footer-social">
           <Col>Connect with me on my social networks:</Col>
           <Col style={{ textAlign: "right" }}>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
+            <i className="bi bi-facebook"></i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-youtube"></i>
           </Col>
         </Row>
         <Row className="footer-main">
@@ -41,7 +41,7 @@ export default function Footer() {
             <div>
               <Row>
                 <Col xs={3}>
-                  <i class="bi bi-envelope-at"></i>
+                  <i className="bi bi-envelope-at"></i>
                 </Col>
                 <Col className="footer-contacts">
                   <p>MickeyTheLifeCoach@gmail.com</p>
@@ -49,7 +49,7 @@ export default function Footer() {
               </Row>
               <Row>
                 <Col xs={3}>
-                  <i class="bi bi-telephone"></i>
+                  <i className="bi bi-telephone"></i>
                 </Col>
                 <Col className="footer-contacts">
                   <p>+1 (831) 430-8985</p>
@@ -57,7 +57,7 @@ export default function Footer() {
               </Row>
               <Row>
                 <Col xs={3}>
-                  <i class="bi bi-house"></i>
+                  <i className="bi bi-house"></i>
                 </Col>
                 <Col className="footer-contacts">
                   <p>Santa Cruz, CA</p>
@@ -74,12 +74,12 @@ export default function Footer() {
         <Row className="footer-social-mobile p-2">
           <Col>Connect with me on social networks: </Col>
           <Col style={{ display: "flex", flexDirection: "row" }}>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
+            <i className="bi bi-facebook"></i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-youtube"></i>
           </Col>
         </Row>
-        <Row fluid className="footer-copyright-mobile p-2">
+        <Row className="footer-copyright-mobile p-2">
           <h6>© 2024 Copyrights: MickeytheLifeCoach.com</h6>
         </Row>
       </Container>
