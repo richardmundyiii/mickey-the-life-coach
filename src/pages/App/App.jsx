@@ -7,6 +7,7 @@ import ContactPage from "../ContactPage/ContactPage";
 import BlogPage from "../BlogPage/BlogPage";
 import AdminPage from "../AdminPage/AdminPage";
 import "./App.css";
+import Footer from "../../components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
