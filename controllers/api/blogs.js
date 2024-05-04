@@ -1,4 +1,4 @@
-const Blog = require("../models/blog");
+const Blog = require("../../models/api/blog");
 
 module.exports = {
   index,
