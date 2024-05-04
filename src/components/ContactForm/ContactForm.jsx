@@ -14,13 +14,6 @@ export default function ContactForm() {
     const templateId = "template_636i0vx";
     const publicKey = "bKtGueedgAwVyZLnK";
 
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: "Web Wizard",
-      message: message,
-    };
-
     emailjs
       .sendForm(serviceId, templateId, evt.target, publicKey)
       .then((response) => {

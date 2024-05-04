@@ -1,4 +1,4 @@
-import { Container, Button, Row, Nav } from "react-bootstrap";
+import { Container, Button, Row } from "react-bootstrap";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "./AdminPage.css";
 
@@ -37,13 +37,13 @@ export default function AdminPage() {
                   </a>
                   <ul class="nb-sub-one collapse" id="collapseStatistics">
                     <li>
-                      <a href="#">
+                      <a href="/admin">
                         <span class="fa fa-clock-o nb-link-icon"></span>
                         <span class="nb-link-text">Daily</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/admin">
                         <span class="fa fa-history nb-link-icon"></span>
                         <span class="nb-link-text">Annual</span>
                       </a>
@@ -51,13 +51,13 @@ export default function AdminPage() {
                   </ul>
                 </li>
                 <li class="active">
-                  <a href="#">
+                  <a href="/admin">
                     <span class="glyphicon glyphicon-folder-open nb-link-icon"></span>
                     <span class="nb-link-text">Pages</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/admin">
                     <span class="glyphicon glyphicon-comment nb-link-icon"></span>
                     <span class="nb-link-text">Comments</span>
                     <span class="badge">4</span>
@@ -77,7 +77,7 @@ export default function AdminPage() {
                   </a>
                   <ul class="nb-sub-one collapse" id="collapseLevelOne">
                     <li>
-                      <a href="#">
+                      <a href="/admin">
                         <span class="fa fa-slack nb-link-icon"></span>
                         <span class="nb-link-text">Level 1</span>
                       </a>
@@ -96,19 +96,19 @@ export default function AdminPage() {
                       </a>
                       <ul class="nb-sub-two collapse" id="collapseLevelTwo">
                         <li>
-                          <a href="#">
+                          <a href="/admin">
                             <span class="fa fa-wifi nb-link-icon"></span>
                             <span class="nb-link-text">Level 2</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/admin">
                             <span class="fa fa-wifi nb-link-icon"></span>
                             <span class="nb-link-text">Level 2</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/admin">
                             <span class="fa fa-wifi nb-link-icon"></span>
                             <span class="nb-link-text">Level 2</span>
                           </a>
@@ -116,7 +116,7 @@ export default function AdminPage() {
                       </ul>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/admin">
                         <span class="fa fa-slack nb-link-icon"></span>
                         <span class="nb-link-text">Level 1</span>
                       </a>

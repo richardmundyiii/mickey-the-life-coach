@@ -1,32 +1,12 @@
-import { useState } from "react";
-import { Container, Row, Col, Carousel, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import CarouselComponent from "../../components/CarouselComponent/CarouselComponent";
 import TreeLogo from "../../images/tree.png";
-import AboutPhoto from "../../images/AboutPhoto.png";
 import BeachPhoto from "../../images/beach.jpg";
 import VennDiagrams from "../../images/venn.png";
 import "./HomePage.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
 
 export default function HomePage() {
-  const [contactForm, setContactForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    comment: "",
-  });
-
-  function handleChange(evt) {
-    setContactForm({
-      ...contactForm,
-      [evt.target.name]: evt.target.value,
-    });
-  }
-
-  async function handleSubmit(evt) {
-    evt.preventDefault();
-  }
   return (
     <Container fluid className="homepage-container">
       <Row className="d-none d-md-block">
