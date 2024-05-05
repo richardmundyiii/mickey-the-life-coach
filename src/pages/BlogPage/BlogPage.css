@@ -1,0 +1,25 @@
+.blog-container {
+  min-height: 50rem;
+}
+
+.blog-card-left {
+  text-align: left;
+  margin-right: auto;
+  background-color: pink;
+  width: 100%;
+}
+
+.blog-card-right {
+  text-align: right;
+  margin-left: auto;
+  background-color: blue;
+  width: 100%;
+}
+
+.blog-more-button {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}

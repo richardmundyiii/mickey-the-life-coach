@@ -27,7 +27,7 @@ async function create(req, res) {
   }
 }
 
-async function updatePost() {
+async function updatePost(req, res) {
   try {
     const updatePost = await Blogs.findOneAndUpdate(req.params.id, req.body, {
       new: true,
@@ -39,7 +39,7 @@ async function updatePost() {
   }
 }
 
-async function deletePost() {
+async function deletePost(req, res) {
   try {
     const blogPost = await Blogs.findOneAndDelete({ _id: req.params.id });
     res.json(blogPost);
