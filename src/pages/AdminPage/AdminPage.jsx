@@ -1,9 +1,25 @@
+import { useState } from "react";
 import { Col, Container, Button, Row } from "react-bootstrap";
 import { Authenticator } from "@aws-amplify/ui-react";
 import AdminNav from "../../components/AdminNav/AdminNav";
+import AdminAllPosts from "../../components/AdminAllPosts/AdminAllPosts";
+import AdminCreatePost from "../../components/AdminCreate/AdminCreatePost";
 import "./AdminPage.css";
 
 export default function AdminPage() {
+  const [selectedComponent, setSelectedComponent] = useState("dashboard");
+
+  const renderComponent = () => {
+    switch (selectedComponent) {
+      case "dashboard":
+        return <AdminAllPosts />;
+      case "create":
+        return <AdminCreatePost />;
+
+      default:
+        return null;
+    }
+  };
   return (
     <Authenticator hideSignUp={true}>
       {({ signOut }) => (
@@ -15,11 +31,13 @@ export default function AdminPage() {
               Sign Out
             </Button>
           </Row>
-          <Row>
-            <Col className="p-0" style={{ height: "50rem" }}>
-              <AdminNav />
+          <Row className="admin-page-row">
+            <Col xs={12} md={2} className="p-0">
+              <AdminNav setSelectedComponent={setSelectedComponent} />
             </Col>
-            <Col></Col>
+            <Col xs={12} md={10}>
+              {renderComponent()}
+            </Col>
           </Row>
         </Container>
       )}
