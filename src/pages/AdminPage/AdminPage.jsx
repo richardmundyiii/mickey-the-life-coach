@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Col, Container, Button, Row } from "react-bootstrap";
 import { Authenticator } from "@aws-amplify/ui-react";
 import AdminNav from "../../components/AdminNav/AdminNav";
+import AdminDash from "../../components/AdminDash/AdminDash";
 import AdminAllPosts from "../../components/AdminAllPosts/AdminAllPosts";
 import AdminCreatePost from "../../components/AdminCreate/AdminCreatePost";
 import "./AdminPage.css";
@@ -12,6 +13,8 @@ export default function AdminPage() {
   const renderComponent = () => {
     switch (selectedComponent) {
       case "dashboard":
+        return <AdminDash />;
+      case "index":
         return <AdminAllPosts />;
       case "create":
         return <AdminCreatePost />;
