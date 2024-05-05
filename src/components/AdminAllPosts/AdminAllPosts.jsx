@@ -7,14 +7,29 @@ import "./AdminAllPosts.css";
 export default function AdminAllPosts() {
   const [allPosts, setAllPosts] = useState([]);
 
-  useEffect(() => {
-    async function getAllPosts() {
-      const posts = await BlogApi.getAllPosts();
-      setAllPosts(posts);
-    }
+  const getAllPosts = async () => {
+    const posts = await BlogApi.getAllPosts();
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    setAllPosts(posts);
+  };
 
+  const refactorDateFormat = (dateStr) => {
+    const date = new Date(dateStr);
+    const mm = String(date.getMonth() + 1).padStart(2, "0");
+    const dd = String(date.getDate()).padStart(2, "0");
+    const yy = String(date.getFullYear()).slice(2);
+    return `${mm}-${dd}-${yy}`;
+  };
+
+  useEffect(() => {
     getAllPosts();
   }, []);
+
+  const handleDeletePost = async (id) => {
+    await BlogApi.deletePost(id);
+
+    getAllPosts();
+  };
 
   return (
     <Container>
@@ -26,14 +41,19 @@ export default function AdminAllPosts() {
           <Table>
             <TableBody>
               {allPosts.map((post, idx) => (
-                <TableRow>
-                  <TableCell>{post.date}</TableCell>
+                <TableRow key={idx}>
+                  <TableCell>{refactorDateFormat(post.date)}</TableCell>
                   <TableCell>{post.title}</TableCell>
                   <TableCell>
-                    <Button className="btn btn-warning">Edit</Button>
+                    <Button className="btn btn-warning">View</Button>
                   </TableCell>
                   <TableCell>
-                    <Button className="btn btn-danger">Delete</Button>
+                    <Button
+                      onClick={() => handleDeletePost(post._id)}
+                      className="btn btn-danger"
+                    >
+                      Delete
+                    </Button>
                   </TableCell>
                 </TableRow>
               ))}
