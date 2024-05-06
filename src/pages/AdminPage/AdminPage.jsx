@@ -24,7 +24,7 @@ export default function AdminPage() {
     }
   };
   return (
-    <Authenticator hideSignUp={false}>
+    <Authenticator hideSignUp={true}>
       {({ signOut }) => (
         <Container fluid>
           <Row className="d-none">
