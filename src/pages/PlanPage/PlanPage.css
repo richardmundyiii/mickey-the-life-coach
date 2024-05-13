@@ -70,34 +70,3 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .pricing-container {
-  min-height: 75vh;
-}
-
-.bottom-align {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
-.intake-container {
-  border-radius: 30px;
-  height: 40rem;
-  background: radial-gradient(rgb(211, 211, 211), rgb(255, 255, 255));
-  margin: 0.5rem;
-}
-
-.breakthrough-container {
-  border-radius: 30px;
-  background: radial-gradient(rgb(37, 79, 124), rgb(25, 55, 87));
-  height: 45rem;
-  margin: 0.5rem;
-}
-
-.ongoing-container {
-  border-radius: 30px;
-  background: radial-gradient(rgb(0, 0, 0), rgb(41, 40, 40));
-  height: 40rem;
-  margin: 0.5rem;
-} */
