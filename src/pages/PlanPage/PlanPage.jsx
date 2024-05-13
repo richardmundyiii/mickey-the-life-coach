@@ -1,76 +1,77 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Typography } from "react-bootstrap";
 import "./PlanPage.css";
 
 export default function PlanPage() {
-  const plans = [
-    {
-      name: "Basic",
-      benefits: [
-        { name: "30 Min", value: "Consultation" },
-        { name: "4 5-Min", value: "Facetimes" },
-        { name: "Monthly", value: "Meal Planner" },
-      ],
-    },
-    {
-      name: "Premium",
-      benefits: [
-        { name: "1 Hr", value: "Consultation" },
-        { name: "4 10-Min", value: "Facetimes" },
-        { name: "Weekly", value: "Meal Planner" },
-        { name: "Daily", value: "Workout Regimine" },
-      ],
-    },
-    {
-      name: "Executive",
-      benefits: [
-        { name: "Unlimited", value: "Consultation" },
-        { name: "Unlimited", value: "Facetimes" },
-        { name: "Weekly", value: "Sitdowns" },
-        { name: "Daily", value: "Meal & Workout Planner" },
-        { name: "24/7", value: "Support" },
-      ],
-    },
-  ];
   return (
     <Container fluid className="pricing-container">
-      <div id="generic_price_table">
-        <section>
-          <Container>
-            <Row>
-              <Col md={12}>
-                <div className="price-heading clearfix">
-                  <h1>Pricing</h1>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              {plans.map((plan, index) => (
-                <Col md={4} key={index}>
-                  <div className="generic_content clearfix">
-                    <div className="generic_head_price clearfix">
-                      <div className="generic_head_content clearfix">
-                        <div className="head_bg"></div>
-                        <div className="head">
-                          <span>{plan.name}</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="generic_feature_list">
-                      <ul>
-                        {plan.benefits.map((benefit, index) => (
-                          <li key={index}>
-                            <span>{benefit.name}</span> {benefit.value}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </section>
-      </div>
+      <Row className="price-row">
+        <Col className="intake">
+          <h2>Intake Process</h2>
+          <ul style={{}}>
+            <li>
+              We start with an in-depth Initial Intake form that explores where
+              you are in and out of balance in the wellness categories
+              (Emotional well-being, Nutritional & physical health,
+              Spirituality, Creativity, Communication, Regaining a sense of
+              FUN).
+            </li>
+            <hr />
+            <li>
+              Clients take their time answering these questions, as this Intake
+              will provide a solid foundation for our work ahead.
+            </li>
+          </ul>
+        </Col>
+        <Col className="breakthrough">
+          <h2>Breakthrough Package</h2>
+          <ul>
+            <li>
+              After the Initial Intake is completed, the Breakthrough package
+              consists of eight sessions (approximately one hour each). We will
+              dive into each of the six wellness categories of the process and
+              focus on plans, goals, and paths forward.
+            </li>
+            <hr />
+            <li>
+              The sessions are designed to illuminate the gaps of where you are
+              now in life and where you want to be. And if you’re not sure where
+              you want to be, I can help you understand and define your journeys
+              and destinations.
+            </li>
+            <hr />
+            <li>
+              Through this work, you gain a detailed roadmap with specific
+              tools, actionable techniques, and powerful resources to help you
+              implement the change you desire.
+            </li>
+          </ul>
+        </Col>
+        <Col className="ongoing">
+          <h2>Ongoing Packages</h2>
+          <ul>
+            <li>
+              After the Breakthrough sessions, this package consists of five
+              sessions (approximately one hour each). This ongoing work and
+              guidance continuously assesses where you are out of balance in the
+              six wellness categories, while also keeping you accountable to
+              yourself.
+            </li>
+            <hr />
+            <li>
+              Over the course of each package, I am there for you every step of
+              the way. The process is about you learning how to become the best
+              version of yourself, and I am there to help you navigate those
+              changes and stay focused.
+            </li>
+            <hr />
+            <li>
+              Life is constantly evolving, and the Ongoing Coaching packages
+              give you the support and coaching you deserve to continue being
+              resilient and cultivating the life you want.
+            </li>
+          </ul>
+        </Col>
+      </Row>
     </Container>
   );
 }
